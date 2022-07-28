@@ -7,6 +7,7 @@ import { FirstComponentComponent } from './components/first-component/first-comp
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { PerfilGabrielComponent } from './components/perfil-gabriel/perfil-gabriel.component';
+import { IfRenderComponent } from './components/if-render/if-render.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PerfilGabrielComponent } from './components/perfil-gabriel/perfil-gabri
     FirstComponentComponent,
     ParentDataComponent,
     DirectivesComponent,
-    PerfilGabrielComponent
+    PerfilGabrielComponent,
+    IfRenderComponent
   ],
   imports: [
     BrowserModule,
