@@ -1,8 +1,7 @@
 body {
-    background-color: cornflowerblue;
-    background-image: linear-gradient(to right, rgb(52, 125, 236)75%,rgb(208, 218, 238));
+    background-color: black;
     border-radius: 10px;
 }
 h1,h2,h3 {
-    color: orange;
+    color: white;
 }

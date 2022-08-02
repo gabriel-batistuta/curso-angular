@@ -8,11 +8,16 @@
     <title>exemplo</title>
 </head>
 <body>
-    <h1>Primeiro usuário: {{ dados_do_estudante.name }}</h1>
-    <h2>    Curso: {{ dados_do_estudante.curso }}</h2>
-    <h3>        Turno: {{ dados_do_estudante.turno }}</h3>
-    <h2>Profissão: {{ dados_do_estudante.function }}</h2>
-    <h2>Idade: {{ dados_do_estudante.age }}</h2>
+    <h2>Escolha um usuário: </h2>
+    <button (click)="showPerfilGabriel()">Gabriel</button>
+    <button (click)="showPerfilJoao()">João</button>
+    <button (click)="return()">Início</button>
+    <h1 *ngIf="show">Usuário atual: {{ dados_do_estudante.name }}</h1>
+    <h2 *ngIf="show">Curso: {{ dados_do_estudante.curso }}</h2>
+    <h3 *ngIf="show">Turno: {{ dados_do_estudante.turno }}</h3>
+    <h2 *ngIf="show">Profissão: {{ dados_do_estudante.function }}</h2>
+    <h2 *ngIf="show">Idade: {{ dados_do_estudante.age }}</h2>
+
 </body>
 </html>
 </div>
