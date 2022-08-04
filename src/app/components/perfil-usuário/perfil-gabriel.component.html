@@ -12,6 +12,11 @@
     <button (click)="showPerfilGabriel()">Gabriel</button>
     <button (click)="showPerfilJoao()">João</button>
     <button (click)="return()">Início</button>
+    <button (click)="showPerfilAdmin()" class="adm">Admin</button>
+    <button *ngIf="showAdm"(click)="showPerfilJose()" class="adm, userAdm">José</button>
+    <button *ngIf="showAdm" (click)="showPerfilMaria()" class="adm,userAdm" ngClass="userAdm">maria</button>
+    <h1 *ngIf="showAdm">Usuário atual: {{ dados_do_funcionario.name }}</h1>
+    <h2 *ngIf="showAdm">Função: {{ dados_do_funcionario.function }}</h2>
     <h1 *ngIf="show">Usuário atual: {{ dados_do_estudante.name }}</h1>
     <h2 *ngIf="show">Curso: {{ dados_do_estudante.curso }}</h2>
     <h3 *ngIf="show">Turno: {{ dados_do_estudante.turno }}</h3>

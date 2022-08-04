@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    border-radius: 10px;
+}
+
+h1,h2,h3 {
+    color: white;
+}
+
+.adm {
+    color: lightgreen;
+    background-color: black;
+    box-shadow: 1px 1px solid orange;
+}
+
+.userAdm {
+    background-color: orange;
+    color: blue;
+}
